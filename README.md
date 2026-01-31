@@ -12,7 +12,16 @@ It showcases my hands-on practice with **HTML, CSS, and frontend UI design**, fo
 Explore the Frontend Mentor challenges below 👇
 
 ### 🎨 UI & Layout Challenges
-- 🔗 [Build a Job Application Form](https://chandutelaga.github.io/FreeCodeCampProjects/Build%20A%20Job%20Application%20Form/)
+- 🔗 [bento-grid-main](https://chandutelaga.github.io/FrontEndMentorProjects/bento-grid-main/)
+- 🔗 [blog-preview-card-main](https://chandutelaga.github.io/FrontEndMentorProjects/blog-preview-card-main/)
+- 🔗 [four-card-feature-section-master](https://chandutelaga.github.io/FrontEndMentorProjects/four-card-feature-section-master/)
+- 🔗 [product-preview-card-component-main](https://chandutelaga.github.io/FrontEndMentorProjects/product-preview-card-component-main/)
+- 🔗 [qr-code-component-main](https://chandutelaga.github.io/FrontEndMentorProjects/qr-code-component-main/)
+- 🔗 [recipe-page-main](https://chandutelaga.github.io/FrontEndMentorProjects/recipe-page-main/)
+- 🔗 [social-links-profile-main](https://chandutelaga.github.io/FrontEndMentorProjects/social-links-profile-main/)
+- 🔗 [testimonials-grid-section-main](https://chandutelaga.github.io/FrontEndMentorProjects/testimonials-grid-section-main/)
+
+### JavaScript Related Projects Comming Soon
 
 
 ---
