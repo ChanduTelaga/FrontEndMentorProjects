@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --green-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color-700: hsl(0, 0%, 20%);
+  --grey-color-800: hsl(0, 0%, 12%);
+  --grey-color-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--grey-color-900);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--grey-color-800);
+  width: 21em;
+  height: 32em;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 8rem;
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image img {
+  border-radius: 6.25rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.card_text h1 {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card_text span {
+  color: var(--green-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.card_text p {
+  color: var(--grey-color-700);
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card_links {
+  width: 25em;
+  height: 2.5em;
+  background-color: var(--grey-color-700);
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-top: 0.7rem;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_links:hover {
+  background-color: var(--green-color);
+  color: var(--grey-color-900);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 18em;
+    height: 31em;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .card_text h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .card_text span {
+    color: var(--green-color);
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+
+  .card_text p {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card_links {
+    width: 21em;
+    height: 2.5em;
+    padding: 20px;
+  }
+}
