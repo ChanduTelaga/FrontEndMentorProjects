@@ -4,9 +4,11 @@ body {
 }
 
 .form {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
     background-color: white;
-    width: 40vw;
-    height: 30vw;
+    
     padding: 40px;
     border-radius: 40px 40px 200px 40px;
     margin: 20px auto;
@@ -41,6 +43,7 @@ input {
 
 input:focus {
     border-color: hsl(0, 0%, 86%);
+    outline: none;
 }
 
 input::placeholder {
@@ -62,7 +65,7 @@ input::placeholder {
 .divider hr {
     width: 85%;
     height: 0;
-    color: rgb(162, 160, 160);
+    border: 1px solid rgb(162, 160, 160);
 }
 .divider .img {
     width: 15%;
@@ -78,15 +81,17 @@ input::placeholder {
 .output {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    align-items: flex-start;
+    gap: 5px;
 }
-
 .output .odiv {
+    width: 100%;
+    height: fit-content;
+
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 .odiv .num {
     font-weight: bold;
