@@ -1,0 +1,105 @@
+body {
+    background-color: hsl(0, 0%, 86%);
+    font-family: "Poppins";
+}
+
+.form {
+    background-color: white;
+    width: 40vw;
+    height: 30vw;
+    padding: 40px;
+    border-radius: 40px 40px 200px 40px;
+    margin: 20px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+input {
+    width: 80px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: hsl(0, 0%, 86%);
+    padding: 5px 5px 5px 15px;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+input:focus {
+    border-color: hsl(0, 0%, 86%);
+}
+
+input::placeholder {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.divider {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.divider hr {
+    width: 85%;
+    height: 0;
+    color: rgb(162, 160, 160);
+}
+.divider .img {
+    width: 15%;
+    height: 75px;
+    border-radius: 100%;
+    background-color: hsl(259, 100%, 65%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.output .odiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.odiv .num {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: hsl(259, 100%, 65%);
+}
+.odiv p {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+}
+
+
