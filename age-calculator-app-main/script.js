@@ -22,33 +22,36 @@ const objMonths = {
   12: { name: "December", days: 31 }
 };
 
-btn.addEventListener("click", (e) => {
-    if(parseInt(inpDay.value) >31) {
-        alert("Input value of Day should be in rage of 1 to 31");
-        e.preventDefault();
-    }
-    if(parseInt(inpMonth.value) >12) {
-        alert("Input value of Month should be in rage of 1 to 12 as there are only 12 months lol 😂");
-        e.preventDefault();
-    }
-
-    if(parseInt(inpDay.value) > objMonths[parseInt(inpMonth.value)].days) {
-        console.log(objMonths[parseInt(inpMonth.value)].days);
-        alert(`${objMonths[parseInt(inpMonth.value)].name} doesnt have more than ${objMonths[parseInt(inpMonth.value)].days} days`);
-        e.preventDefault();
-    }
-})
-
-function calculateAge() {
-    console.log("ran")
+btn.addEventListener("click", () => {
     const d = parseInt(inpDay.value);
     const m = parseInt(inpMonth.value);
-    const y = parseInt(inpYear.value)
+    const y = parseInt(inpYear.value);
     const birthDate = new Date(y, m - 1, d);
-    console.log("BirthDate: ", birthDate)
-
     const now = new Date();
-    console.log("Now: ", now)
+    
+    if (isNaN(d) || d < 1 || d > 31) {
+        alert("Day must be between 1 and 31");
+        return;
+    }
+    if (isNaN(m) || m < 1 || m > 12) {
+        alert("Month must be between 1 and 12");
+        return;
+    }
+    if (isNaN(y) || y > now.getFullYear()) {
+        alert("Year must not be in the future");
+        return;
+    }
+
+
+    let maxDays = objMonths[m].days;
+    if(m == 2 && ((y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0))) {
+        maxDays = 29;
+    }
+
+    if(d> maxDays) {
+        alert(`${objMonths[m].name} doesnt have more than ${maxDays} days`);
+        return;
+    }
 
     let yearsN = now.getFullYear() - birthDate.getFullYear();
     console.log(yearsN)
@@ -70,10 +73,7 @@ function calculateAge() {
     years.innerText = yearsN;
     months.innerText = monthsN; 
     days.innerText = daysN;
-}
-
-btn.addEventListener("click", calculateAge);  
-
+})
 
 
 
